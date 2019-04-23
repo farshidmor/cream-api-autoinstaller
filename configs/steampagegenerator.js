@@ -5,7 +5,7 @@
 
 var parser_data = {
 	name: "CreamApi config JS generator",
-	version: "0.23"
+	version: "0.24"
 }
 
 var options = { // change your options here
