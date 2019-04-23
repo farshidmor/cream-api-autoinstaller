@@ -195,12 +195,16 @@ function generateFileText(options) {
 			}
 		},
 		dlc: {
+		},
+		dlc_installdirs: {
+		},
+		steam_ugc: {
 		}
 	};
 	var appdata = collectAppData();
 	data.steam.appid.value = appdata.appid;
 	data.dlc = collectDlc();
-	var serializeorder = ["steam","steam_misc","steam_wrapper","dlc"];
+	var serializeorder = ["steam","steam_misc","steam_wrapper","dlc","dlc_installdirs","steam_ugc"];
 	var includedescriptions = false;
 	if (options.descriptions == true) {
 		includedescriptions = true;
